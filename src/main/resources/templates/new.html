@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <title>Spring Security Example </title>
+</head>
+<body>
+<form th:action="@{/topics}" method="post">
+    <div><label> Title : <input type="text" name="title" value="qqq"/> </label></div>
+    <div><label> SectionId : <input type="text" name="sectionId" value="1"/> </label></div>
+    <div><label> Content: <input type="text" name="content" value="okok"/> </label></div>
+    <div><input type="submit" value="Submit"/></div>
+</form>
+</body>
+</html>
